@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB2EF0DC2017DF5C00174C7B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2EF0DB2017DF5C00174C7B /* main.swift */; };
-		BB2EF0E32017DFE300174C7B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2EF0E22017DFE300174C7B /* File.swift */; };
+		BB2EF0E32017DFE300174C7B /* AutomobileClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2EF0E22017DFE300174C7B /* AutomobileClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		BB2EF0D82017DF5C00174C7B /* TijerinaIsaac-hw1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TijerinaIsaac-hw1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2EF0DB2017DF5C00174C7B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		BB2EF0E22017DFE300174C7B /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		BB2EF0E22017DFE300174C7B /* AutomobileClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomobileClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				BB2EF0DB2017DF5C00174C7B /* main.swift */,
-				BB2EF0E22017DFE300174C7B /* File.swift */,
+				BB2EF0E22017DFE300174C7B /* AutomobileClass.swift */,
 			);
 			path = "TijerinaIsaac-hw1";
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB2EF0DC2017DF5C00174C7B /* main.swift in Sources */,
-				BB2EF0E32017DFE300174C7B /* File.swift in Sources */,
+				BB2EF0E32017DFE300174C7B /* AutomobileClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +256,7 @@
 				BB2EF0E12017DF5C00174C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
