@@ -9,10 +9,10 @@
 import Foundation
 
 class Automobile{
-    private var _make:String = "<NotSet>"
-    private var _model:String = "<NotSet>"
-    private var _numberOfDoors:Int = 0
-    private var _speed:Int = 0
+    private var _make:String
+    private var _model:String
+    private var _numberOfDoors:Int
+    private var _speed:Int
     
     init(_make:String, _model:String, _numberOfDoors:Int, _speed:Int) {
         self._make = _make
@@ -21,14 +21,11 @@ class Automobile{
         self._speed = _speed
     }
     
-    class func create(_make:String, _model:String, _numberOfDoors:Int, _speed:Int){
-        self._make = _make
-        self._model = _model
-        self._numberOfDoors = _numberOfDoors
-        self._speed = _speed
+    class func create(_make:String, _model:String, _numberOfDoors:Int, _speed:Int) -> Automobile{
+        return Automobile(_make: _make,  _model: _model,_numberOfDoors : _numberOfDoors,_speed : _speed)
     }
     
-    func Get_make(){
+    func Get_make() -> String{
         return _make
     }
     
@@ -36,7 +33,7 @@ class Automobile{
         self._make = _make
     }
     
-    func Get_model(){
+    func Get_model() -> String{
         return _model
     }
     
@@ -44,7 +41,7 @@ class Automobile{
         self._model = _model
     }
     
-    func Get_numberOfDoors(){
+    func Get_numberOfDoors() -> Int{
         return _numberOfDoors
     }
     
@@ -52,26 +49,29 @@ class Automobile{
         self._numberOfDoors = _numberOfDoors
     }
     
-    func Get_speed(){
+    func Get_speed() -> Int{
         return _speed
     }
     
     func increaseSpeed(speedChange:Int){
-        var changedSpeed = _speed + speedChange
+        let changedSpeed = _speed + speedChange
         if(0 <= changedSpeed && changedSpeed <= 150){
             _speed = changedSpeed
         }
     }
     
     func decreaseSpeed(speedChange:Int){
-        var changedSpeed = _speed - speedChange
+        let changedSpeed = _speed - speedChange
         if(0 <= changedSpeed && changedSpeed <= 150){
             _speed = changedSpeed
         }
     }
     
-    func description(){
-        var description = "Make: " + _make + ", Model: " + _model + ", NumDoors: " + _numberOfDoors + ", Speed: " + _speed
+    func description() -> String{
+        var description = "Make: " + _make
+        description += ", Model: " + _model
+        description += ", NumDoors: " + String(_numberOfDoors)
+        description += ", Speed: " + String(_speed)
         return description
     }
     
