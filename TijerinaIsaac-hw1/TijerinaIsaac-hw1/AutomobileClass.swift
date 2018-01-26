@@ -25,7 +25,7 @@ class Automobile{
     }
     
     //When called creates a Automobile object using the provided parameters
-    class func create(_make:String, _model:String, _numberOfDoors:Int, _speed:Int) -> Automobile{
+    class func create(make _make:String,model _model:String,numberOfDoors _numberOfDoors:Int,speed _speed:Int) -> Automobile{
         return Automobile(_make: _make,  _model: _model,_numberOfDoors : _numberOfDoors,_speed : _speed)
     }
     

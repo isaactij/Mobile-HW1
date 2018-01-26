@@ -10,9 +10,9 @@ import Foundation
 
 func main(){
     //Create three Automobile objects
-    let firstCar:Automobile = Automobile.create(_make: "Maserati", _model: "GranTurismo", _numberOfDoors: 2, _speed: 67)
-    let secondCar:Automobile = Automobile.create(_make: "Honda", _model: "Accord", _numberOfDoors: 4, _speed: 128)
-    let thirdCar:Automobile = Automobile.create(_make: "Tesla", _model: "S 90", _numberOfDoors: 2, _speed: 35)
+    let firstCar:Automobile = Automobile.create(make: "Maserati", model: "GranTurismo", numberOfDoors: 2, speed: 67)
+    let secondCar:Automobile = Automobile.create(make: "Honda", model: "Accord", numberOfDoors: 4, speed: 128)
+    let thirdCar:Automobile = Automobile.create(make: "Tesla", model: "S 90", numberOfDoors: 2, speed: 35)
     //Call changeSpeeds() to change their speeds simulating a race
     changeSpeeds(firstCar: firstCar, secondCar: secondCar, thirdCar: thirdCar)
     //Print out the descriptions of all three Automobile objects
@@ -73,13 +73,13 @@ func raceOutcome(firstCar:Automobile, secondCar:Automobile, thirdCar:Automobile)
     //Checks to see which car has the highest speed and saves the make and model of the winning car
     }else if((firstCarSpeed > secondCarSpeed) && (firstCarSpeed > thirdCarSpeed)){
         winningCarMake = firstCar.getMake()
-        winningCarModel = firstCar.getMake()
+        winningCarModel = firstCar.getModel()
     }else if((secondCarSpeed > firstCarSpeed) && (secondCarSpeed > thirdCarSpeed)){
         winningCarMake = secondCar.getMake()
-        winningCarModel = secondCar.getMake()
+        winningCarModel = secondCar.getModel()
     }else if((thirdCarSpeed > firstCarSpeed) && (thirdCarSpeed >  secondCarSpeed)){
         winningCarMake = thirdCar.getMake()
-        winningCarModel = thirdCar.getMake()
+        winningCarModel = thirdCar.getModel()
     }
     //String to be returned
     let returnString:String
