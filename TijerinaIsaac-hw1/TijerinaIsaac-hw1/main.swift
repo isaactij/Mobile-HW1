@@ -10,9 +10,9 @@ import Foundation
 
 func main(){
     //Create three Automobile objects
-    let firstCar:Automobile = Automobile.create(make: "Maserati", model: "GranTurismo", numberOfDoors: 2, speed: 67)
-    let secondCar:Automobile = Automobile.create(make: "Honda", model: "Accord", numberOfDoors: 4, speed: 128)
-    let thirdCar:Automobile = Automobile.create(make: "Tesla", model: "S 90", numberOfDoors: 2, speed: 35)
+    let firstCar:Automobile = Automobile.create(make: "Maserati", model: "GranTurismo", numberOfDoors: 2, speed: 0)
+    let secondCar:Automobile = Automobile.create(make: "Honda", model: "Accord", numberOfDoors: 4, speed: 0)
+    let thirdCar:Automobile = Automobile.create(make: "Tesla", model: "S 90", numberOfDoors: 2, speed: 0)
     //Call changeSpeeds() to change their speeds simulating a race
     changeSpeeds(firstCar: firstCar, secondCar: secondCar, thirdCar: thirdCar)
     //Print out the descriptions of all three Automobile objects

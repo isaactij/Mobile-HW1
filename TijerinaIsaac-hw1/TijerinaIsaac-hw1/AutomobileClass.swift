@@ -67,16 +67,20 @@ class Automobile{
     //Adds the provided speed to the current speed if the resulting speed is between 0 and 150
     func increaseSpeed(speedChange:Int){
         let changedSpeed = _speed + speedChange
-        if(0 <= changedSpeed && changedSpeed <= 150){
+        if(changedSpeed <= 150){
             _speed = changedSpeed
+        }else{
+            _speed = 150
         }
     }
     
     //Subtracts the provided speed from the current speed if the resulting speed is between 0 and 150
     func decreaseSpeed(speedChange:Int){
         let changedSpeed = _speed - speedChange
-        if(0 <= changedSpeed && changedSpeed <= 150){
+        if(0 <= changedSpeed){
             _speed = changedSpeed
+        }else{
+            _speed = 0
         }
     }
     
